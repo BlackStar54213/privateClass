@@ -58,15 +58,50 @@
 
 
 
-
-
-let slide1 = $('#slide');
+let slide1 = $('#slide1');
 let slide2 = $('#slide2');
 let slide3 = $('#slide3');
 slide2.hide();
 slide3.hide();
+let counter = 0;
+$('#bto').on('click', () => {
+    if (counter == 0) {
+        slide1.hide();
+        slide2.show(); counter++
+    } else if (counter == 1) {
+        slide2.hide();
+        slide3.show(); counter++
+    } else if (counter == 2) {
+        slide1.show();
+        slide3.hide();
+        counter = 0
+    } else {
+        slide3.show();
+        slide1.hide();
+        counter = 0
+    }
+
+
+})
 $('#btn').on('click', () => {
-    slide3.show();
-    slide1.hide();
-    slide2.hide();
+    console.log('foe')
+    if (counter == 0) {
+        slide1.hide();
+        slide3.show(); counter = 2;
+    } else if (counter == 1) {
+        slide2.hide();
+        slide1.show(); counter--
+    } else if (counter == 2) {
+        slide3.hide();
+        slide2.show();
+        counter--
+    } else {
+        slide3.show();
+        slide1.hide();
+        counter = 0
+    }
 });
+
+
+
+
