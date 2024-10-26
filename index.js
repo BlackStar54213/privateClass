@@ -16,16 +16,16 @@
 // })
 
 
-$(document).ready(function () {
-    $('#caro').carousel();
-    $('#bbt').on('click', function () {
-        $('#caro').carousel('prev')
-    })
-})
+// $(document).ready(function () {
+//     $('#caro').carousel();
+//     $('#bbt').on('click', function () {
+//         $('#caro').carousel('prev')
+//     })
+// })
 
-$(document).read(function () {
-    $('#caro').carousel();
-    $('#btt').on('click', function () {
-        $('#caro').carousel('next')
-    })
-})
+// $(document).read(function () {
+//     $('#caro').carousel();
+//     $('#btt').on('click', function () {
+//         $('#caro').carousel('next')
+//     })
+// })

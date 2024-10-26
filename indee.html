@@ -1,11 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #slide1 {
+            width: 750px;
+        }
+
+        #slide2 {
+            width: 750px;
+        }
+
+        #slide3 {
+            width: 750px;
+        }
+
+        .slide2 {
+            display: none;
+        }
+
+        .slide3 {
+            display: none;
+        }
+    </style>
 </head>
+
 <body>
-    <img src="/44.jpeg" alt="">
+    <div id="slides">
+        <div class="slide1">
+            <img src="/44.jpeg" alt="44" id="slide1">
+        </div>
+        <div class="slide2">
+            <img src="/66.jpg" alt="66" id="slide2">
+        </div>
+        <div class="slide3">
+            <img src="/99.png" alt="99" id="slide3">
+        </div>
+    </div>
+    <div id="button">
+        <button>previous</button>
+
+
+        <button>next</button>
+    </div>
 </body>
+
 </html>
