@@ -7,3 +7,25 @@
 
 //     document.getElementById('fire').setAttribute('class', "flame")
 // })
+
+// $(document).ready(function funct1() {
+//     setInterval(function (){
+//     $('#bbt').carousel('prev')
+//     }, 5000)
+
+// })
+
+
+$(document).ready(function () {
+    $('#caro').carousel();
+    $('#bbt').on('click', function () {
+        $('#caro').carousel('prev')
+    })
+})
+
+$(document).read(function () {
+    $('#caro').carousel();
+    $('#btt').on('click', function () {
+        $('#caro').carousel('next')
+    })
+})
