@@ -8,6 +8,7 @@
     <style>
         body {
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
         }
@@ -31,6 +32,46 @@
         .slide3 {
             display: none;
         }
+
+        #bbb {
+            width: 50px;
+        }
+
+        #bbd {
+            width: 50px;
+        }
+
+        #spp {
+            display: none;
+        }
+
+        #button {
+            display: flex;
+            gap: 1000px;
+            margin-top: -200px;
+        }
+
+        .bar {
+            width: 40px;
+        }
+
+        .barr {
+            width: 40px;
+        }
+
+        .barrr {
+            width: 40px;
+        }
+
+        .barrrr {
+            width: 40px;
+            display: none;
+        }
+
+        .bars {
+            display: flex;
+            gap: 30px;
+        }
     </style>
 </head>
 
@@ -46,11 +87,22 @@
             <img src="/99.png" alt="99" id="slide3">
         </div>
     </div>
+    <div class="bars">
+        <img src="thin-line.png" alt="" class="bar">
+        <img src="thin-line.png" alt="" class="barr">
+        <img src="thin-line.png" alt="" class="barrr"> <img src="minus-big-symbol.png" alt="" class="barrrr">
+
+
+    </div>
     <div id="button">
-        <button>previous</button>
+        <button><img src="left-chevron.png" alt="left-chevron" id="bbb">
+            <span id="spp">previous</span>
+        </button>
 
 
-        <button>next</button>
+        <button><img src="chevron.png" alt="chevron" id="bbd">
+            <span id="spp">next</span>
+        </button>
     </div>
 </body>
 
